@@ -274,7 +274,7 @@ class App extends React.Component {
                 className="form-control"
                 name="fecha"
                 type="text"
-                value={ (new Date()).getDate() + '/' + ((new Date()).getMonth() + 1) + '/' + new Date().getFullYear()}
+                onChange={this.handleChange}
               />
             </FormGroup>
             
