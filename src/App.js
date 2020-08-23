@@ -114,7 +114,8 @@ class App extends React.Component {
         </div>
 
         <div class="text-center" >
-          <h1 class="display-1">Tus apuntes</h1>
+          <h1 class="display-4">Tus apuntes</h1>
+          <p> Examen de UX - Luis Enriquez </p>
         </div>
 
 
@@ -126,6 +127,7 @@ class App extends React.Component {
           </div>
           <br />
           <br />
+          <div class="table-responsive">
           <Table>
             <thead class="thead-dark">
               <tr>
@@ -157,6 +159,7 @@ class App extends React.Component {
               ))}
             </tbody>
           </Table>
+          </div>
         </Container>
 
 
