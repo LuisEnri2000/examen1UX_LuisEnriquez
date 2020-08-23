@@ -4,40 +4,23 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DataTable from 'react-data-table-component'
 
-const tablaRecia =[
-  {apunte:"React es una biblioteca de javascript para construir interfaces de usuario.", fecha:"21/ago/2020 09:31:50", etiquetas:"react, javascript, front-end"},
-
+const data = [
+  { id: 1, apunte: "F=ma", fecha: "22/8/2020", tags: "Formula, Fisica, Fuerza"},
+  { id: 2, apunte: "React es una biblioteca de javascript para construir interfaces de usuario.", fecha: "22/8/2020", tags: "react, javascript, front-end"},
 ];
 
-const columnasRecias = [
-  {
-    name: 'Recio', 
-    selector: 'apunte', 
-    sortable: true 
-  },
-  {
-    name: 'Fecha', selector: 'fecha', sortable: true 
-  },
-  {
-    name: 'Etiquetas', selector: 'etiquetas', sortable: true
-  },
-]
-
-function App() {
-  return (
-    <div className="App">
-
-      <DataTable 
-      columns = {columnasRecias}
-      data = {tablaRecia}
-      title = "Recio"
-      />
-      
-
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    data: data,
+    modalActualizar: false,
+    modalInsertar: false,
+    form: {
+      id: "",
+      apunte: "",
+      fecha: "",
+      tags: "",
+    },
+  };
 }
-
-
 
 export default App;
