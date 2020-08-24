@@ -109,6 +109,7 @@ class App extends React.Component {
 
         <div className="application">
         <Helmet>
+            <title>{'Examen de UX'}</title>
             <style>{'body { background-color: #FEFF46; }'}</style>      
         </Helmet>
         </div>
